@@ -1,10 +1,18 @@
-import Image from 'next/image'
+import { BiCircle, BiUser } from 'react-icons/bi'
 import '../styles/global.scss'
+
+import Button from './components/button/Button.component'
 
 export default function Home() {
   return (
     <main>
-      <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis debitis in ullam ratione eveniet, delectus minus dolore optio nemo iste, minima neque eligendi quisquam nulla et, recusandae alias! Mollitia, nisi!</h1>
+      <Button text={'texto'} type={'primary'}>
+        <BiUser />
+      </Button>
+
+      <Button text={'texto outro'}>
+        <BiCircle />
+      </Button>
     </main>
   )
 }
