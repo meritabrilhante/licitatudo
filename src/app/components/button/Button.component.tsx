@@ -1,15 +1,20 @@
-import { StyledButton, StyledButtonProps } from "./Button"
+import { IconType } from "react-icons";
+import { StyledButton } from "./Button"
 
-interface ButtonProps {
-  type: StyledButtonProps;
-  text: string;
-  children: React.ReactNode;
+export interface ButtonProps {
+  buttonType: ButtonType;
+  text?: string;
+  icon?: IconType;
 }
 
-const Button = ({ type, text, children }: ButtonProps) => {
+export type ButtonType = 'primary' | 'secondary' | 'tertiary'
+
+const IconWrapper = ({ icon: Icon }: { icon: IconType }) => <Icon size={'16px'}/>;
+
+const Button = ({ buttonType, text, icon }: ButtonProps) => {
   return(
-    <StyledButton type={'primary'}>
-      {children}
+    <StyledButton buttonType={buttonType}>
+      {icon && <IconWrapper icon={icon} />}
       {text}
     </StyledButton>
   );

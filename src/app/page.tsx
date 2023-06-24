@@ -1,15 +1,15 @@
 'use client'
 import { createContext } from 'react'
-import Button from './components/button/Button.component'
 
 import '../styles/global.scss'
+import Header from './components/header/Header.component'
 
 const Context = createContext()
 
 export default function Home() {
   return (
     <main>
-      <Button></Button>
+      <Header />
     </main>
   )
 }

@@ -1,23 +1,8 @@
 import styled from "styled-components";
+import { ButtonProps, ButtonType } from "./Button.component";
 
-export type StyledButtonProps = {
-  type?: string;
-};
-
-export const StyledButton = styled.button<StyledButtonProps>`
-  color: var(--base-white);
-  height: var(--medium);
-  padding: var(--default);
-  font-size: var(--font-size-small);
-  font-weight: var(--semibold);
-  border-radius: var(--border-radius-base);
-  border: none;
-  cursor: pointer;
-  ${(props) => props.type && getButtonStyles(props.type)}
-`;
-
-const getButtonStyles = (type: string) => {
-  switch (type) {
+const getButtonStyles = (buttonType: ButtonType) => {
+  switch (buttonType) {
     case 'primary':
       return `
         background-color: var(--primary-green);
@@ -39,3 +24,20 @@ const getButtonStyles = (type: string) => {
       `;
   };
 }
+
+export const StyledButton = styled.button<ButtonProps>`
+  color: var(--base-white);
+  height: var(--medium);
+  padding: var(--default);
+  font-size: var(--font-size-small);
+  font-weight: var(--semibold);
+  border-radius: var(--border-radius-base);
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  ${(props) => props.buttonType && getButtonStyles(props.buttonType)}
+`;
