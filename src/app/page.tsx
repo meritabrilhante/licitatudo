@@ -1,18 +1,15 @@
-import { BiCircle, BiUser } from 'react-icons/bi'
+'use client'
+import { createContext } from 'react'
+import Button from './components/button/Button.component'
+
 import '../styles/global.scss'
 
-import Button from './components/button/Button.component'
+const Context = createContext()
 
 export default function Home() {
   return (
     <main>
-      <Button text={'texto'} type={'primary'}>
-        <BiUser />
-      </Button>
-
-      <Button text={'texto outro'}>
-        <BiCircle />
-      </Button>
+      <Button></Button>
     </main>
   )
 }

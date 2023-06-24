@@ -1,22 +1,18 @@
+import { StyledButton, StyledButtonProps } from "./Button"
 
-import styles from "./Button.module.scss"
-export interface ButtonProps {
+interface ButtonProps {
+  type: StyledButtonProps;
   text: string;
-  type?: ButtonType;
-  children?: React.ReactNode
+  children: React.ReactNode;
 }
 
-export type ButtonType = 'primary' | 'secondary' | 'tertiary'
-
-
-const Button = ({ text, children }:ButtonProps) => {
-
+const Button = ({ type, text, children }: ButtonProps) => {
   return(
-    <button className={styles.button}>
+    <StyledButton type={'primary'}>
       {children}
       {text}
-    </button>
+    </StyledButton>
   );
-};
+}
 
 export default Button;
