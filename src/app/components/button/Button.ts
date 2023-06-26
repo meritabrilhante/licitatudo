@@ -34,6 +34,7 @@ export const StyledButton = styled.button<ButtonProps>`
   border-radius: var(--border-radius-base);
   border: none;
   cursor: pointer;
+  width: ${(props) => props.width};
 
   display: flex;
   align-items: center;

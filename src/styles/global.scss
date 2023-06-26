@@ -55,11 +55,18 @@ body {
   height: inherit;
   width: inherit;
   font-family: var(--font-family-base);
+  line-height: 160%;
   max-width: 100vw;
   overflow-x: hidden;
   background: var(--base-white);
   color: var(--secondary-black);
   -webkit-font-smoothing: antialised;
+}
+
+h1 {
+  font-size: var(--font-size-extralarge);
+  font-weight: 700;
+  line-height: 120%;
 }
 
 a {
