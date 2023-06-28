@@ -2,7 +2,8 @@
 import { createContext } from 'react'
 
 import Header from './components/header/Header.component'
-import LandingSection from './components/sections/landing-section/LandingSection.component';
+import { LandingSection, BenefitsSection } from './components/sections/index';
+import { Container } from './components/container';
 
 const Context = createContext()
 
@@ -10,7 +11,11 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <LandingSection />
+
+      <Container>
+        <LandingSection />
+        <BenefitsSection />
+      </Container>
     </main>
   )
 }

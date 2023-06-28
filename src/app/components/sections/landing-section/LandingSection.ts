@@ -2,9 +2,7 @@ import styled from "styled-components";
 
 export const StyledLandingSection = styled.div`
   display: grid;
-  grid-template-columns: 50% 50%;
-  margin: 0 8rem;
-  padding: 4rem 0;
+  grid-template-columns: 50% 50%;7
 `;
 
 export const StyledSection = styled.section`
@@ -12,7 +10,7 @@ export const StyledSection = styled.section`
   flex-direction: column;
   align-items: left;
   gap: 1rem;
-  padding: 4rem 0;
+  padding: 8rem 0;
 `;
 
 export const StyledBadge = styled.div`

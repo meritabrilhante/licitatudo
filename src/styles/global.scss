@@ -15,7 +15,7 @@
   --font-size-base: 1rem;
   --font-size-medium: 1.5rem;
   --font-size-large: 2rem;
-  --font-size-extralarge:2.5rem;
+  --font-size-extralarge: 3rem;
   --font-family-base: Montserrat, sans-serif;
 
   // Font weight
@@ -67,6 +67,19 @@ h1 {
   font-size: var(--font-size-extralarge);
   font-weight: 700;
   line-height: 120%;
+}
+
+h2 {
+  font-size: var(--font-size-large);
+  font-weight: 700;
+  line-height: 140%;
+}
+
+h4 {
+  font-size: var(--font-size-base);
+  color: var(--secondary-blue);
+  font-weight: 600;
+  letter-spacing: 2.4px;
 }
 
 a {
