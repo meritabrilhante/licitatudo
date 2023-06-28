@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledLandingSection = styled.div`
   display: grid;
-  grid-template-columns: 50% 50%;7
+  grid-template-columns: 50% 50%;
 `;
 
 export const StyledSection = styled.section`
