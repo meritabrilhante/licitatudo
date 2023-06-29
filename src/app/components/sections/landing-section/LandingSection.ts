@@ -11,6 +11,20 @@ export const StyledSection = styled.section`
   align-items: left;
   gap: 1rem;
   padding: 8rem 0;
+
+  b {
+    color: var(--primary-green)
+  }
+
+  p {
+    width: 95%
+  }
+
+  section {
+    display: flex;
+    gap: 2rem;
+    align-items: left;
+  }
 `;
 
 export const StyledBadge = styled.div`

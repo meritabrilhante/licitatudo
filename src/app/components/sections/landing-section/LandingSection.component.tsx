@@ -1,31 +1,31 @@
-import { StyledBadge, StyledLandingSection, StyledSection } from "./LandingSection";
-
 import Image from 'next/image';
-import man from 'public/assets/images/siting-man.png'
-import { FaRegPaperPlane } from "react-icons/fa";
+
+import { StyledBadge, StyledLandingSection, StyledSection } from "./LandingSection";
 import Button from "../../button/Button.component";
+
+import man from 'public/assets/images/siting-man.png'
 
 const LandingSection = () => {
   return(
     <StyledLandingSection>
       <StyledSection>
         <h1>
-          Nunca foi tão fácil <br/>
-          <b style={{ color: 'var(--primary-green)' }}>vender</b> para o governo</h1>
-        <p style={{ width: '95%' }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Vestibulum mollis dui placerat diam congue convallis id vitae neque.
-          Morbi varius eros id mauris pellentesque sollicitudin.
+          Nunca foi tão fácil <b>vender</b> para o governo
+        </h1>
+
+        <p>
+          Simplificamos processos licitatórios
+          oferecendo uma consultoria técnica e júridica especializada
+          na gestão de licitações públicas em todo território nacional
         </p>
 
         <Button
-          icon={FaRegPaperPlane}
           buttonType={'secondary'}
           text={'Solicite um orçamento'}
-          width={'204px'}
+          width={'256px'}
         />
 
-        <section style={{ display: 'flex', gap: '2rem', alignItems: 'left' }}>
+        <section>
           <StyledBadge>
             <h2>1M+</h2>
 
