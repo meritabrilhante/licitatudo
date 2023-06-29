@@ -20,7 +20,12 @@ const getButtonStyles = (buttonType: ButtonType) => {
     case 'tertiary':
       return `
         background-color: transparent;
-        border: 0.05rem solid var(--base-white);
+        color: var(--primary-blue);
+        padding: 0;
+
+        &:hover {
+          text-decoration: underline;
+        }
       `;
   };
 }
