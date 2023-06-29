@@ -27,6 +27,11 @@ const getButtonStyles = (buttonType: ButtonType) => {
           text-decoration: underline;
         }
       `;
+      case 'quaternary':
+        return `
+          background-color: transparent;
+          border: 1px solid var(--base-white);
+        `;
   };
 }
 

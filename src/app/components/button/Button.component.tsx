@@ -6,15 +6,16 @@ export interface ButtonProps {
   text?: string;
   icon?: IconType;
   width?: string;
+  onClick?: () => void
 }
 
-export type ButtonType = 'primary' | 'secondary' | 'tertiary'
+export type ButtonType = 'primary' | 'secondary' | 'tertiary' | 'quaternary'
 
 const IconWrapper = ({ icon: Icon }: { icon: IconType }) => <Icon size={'16px'}/>;
 
-const Button = ({ buttonType, text, icon, width }: ButtonProps) => {
+const Button = ({ buttonType, text, icon, width, onClick }: ButtonProps) => {
   return(
-    <StyledButton buttonType={buttonType} width={width}>
+    <StyledButton buttonType={buttonType} width={width} onClick={onClick}>
       {icon && <IconWrapper icon={icon} />}
       {text}
     </StyledButton>
