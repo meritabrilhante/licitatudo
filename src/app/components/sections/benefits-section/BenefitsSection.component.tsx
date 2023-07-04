@@ -7,7 +7,10 @@ const BenefitsSection = () => {
       <h4> IMPULSIONE SUAS VENDAS</h4>
       <h2>Vender para o governo pode ser <br/>
       muito vantajoso para o seu negócio</h2>
-      <p style={{ width: '75%', paddingBottom: '2rem' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis dui placerat diam congue convallis id vitae neque. Morbi varius eros id mauris pellentesque sollicitudin.</p>
+      <p style={{ width: '55%', paddingBottom: '2rem' }}>
+        Diariamente o governo lança centenas de editais em
+        busca de um vendedor que pode ser você!
+      </p>
 
       <section style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', padding: '2rem 0' }}>
         <BenefitsCard

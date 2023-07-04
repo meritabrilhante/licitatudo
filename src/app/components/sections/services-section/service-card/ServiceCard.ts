@@ -10,6 +10,10 @@ export const StyledServiceCard = styled.div`
   align-items: flex-start;
   gap: 1rem;
 
+  h3 {
+    width: 60%
+  }
+
   p {
     width: 75%
   }

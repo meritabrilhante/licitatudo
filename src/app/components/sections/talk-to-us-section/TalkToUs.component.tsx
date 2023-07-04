@@ -7,7 +7,10 @@ const TalkToUsSection = () => {
     <StyledTalkToUsSection>
       <h4>FALE CONOSCO</h4>
       <h2>Nós te ajudamos a impulsionar sua renda</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis dui placerat diam congue convallis id vitae neque. Morbi varius eros id mauris pellentesque sollicitudin.</p>
+      <p>
+        Estratégias eficientes e suporte personalizado visando garantir
+        seu sucesso nos processos licitatórios.
+      </p>
 
       <Button
         buttonType={'secondary'}

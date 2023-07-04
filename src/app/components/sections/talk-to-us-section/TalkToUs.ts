@@ -9,6 +9,6 @@ export const StyledTalkToUsSection = styled.section`
   gap: 1rem;
 
   p {
-    width: 60%;
+    width: 50%;
   }
 `;

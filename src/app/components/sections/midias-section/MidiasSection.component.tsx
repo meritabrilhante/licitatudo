@@ -10,7 +10,11 @@ const MidiasSection = () => {
   return(
     <StyledMidiasSection>
       <h2>Acompanhe nossos conteúdos</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis dui placerat diam congue convallis id vitae neque. Morbi varius eros id mauris pellentesque sollicitudin. </p>
+      <p>
+        Esteja sempre à frente da concorrência.
+        Fique por dentro das nossas novidades e conteúdos e esteja
+        preparado para conqusitar novas oportunidades para o seu negócio!
+      </p>
 
       <section>
         <Button
