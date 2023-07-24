@@ -1,18 +1,24 @@
-import { FaWhatsapp } from 'react-icons/fa';
-import Button from "../button/Button.component";
-import { StyledHeader } from "./Header";
 import Image from 'next/image';
+import { Button } from '../button';
+
+import { FaWhatsapp } from 'react-icons/fa';
+import { StyledHeader } from "./Header";
+
 import logo from '/public/assets/images/logo.svg'
 
 const Header = () => {
   return(
     <StyledHeader>
-      <Image src={logo} alt={''}/>
+      <Image
+        src={logo}
+        alt={'Logo da Licitatudo - Acessoria em Licitações'}
+        width={124}
+      />
+
       <Button
         text={'Whatsapp'}
         buttonType={'primary'}
         icon={FaWhatsapp}
-        width={'180px'}
       />
     </StyledHeader>
   );
