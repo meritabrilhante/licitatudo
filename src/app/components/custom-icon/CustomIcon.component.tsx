@@ -7,10 +7,10 @@ export interface CustomIconProps {
   type: IconSVG;
   size?: number
   style?: CSSProperties;
-  alt: string;
+  alt?: string;
 }
 
-const CustomIcon = ({ type, size = 24, style, alt }: CustomIconProps) => {
+const CustomIcon = ({ type, size = 40, style, alt = '' }: CustomIconProps) => {
   return (
     <div style={{ width: size, height: size, ...style }}>
       <Image

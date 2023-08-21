@@ -31,73 +31,37 @@ const ServicesSection = () => {
         <Card
           title={"Adequação Documental"}
           description={"Garantimos que todos os documentos estão em ordem, cumprindo os requisitos exigidos."}
-          children={
-            <CustomIcon
-              type={"shop"}
-              alt={"shop"}
-              size={40}
-            />
-          }
+          icon={'shop'}
         />
 
         <Card
           title={"Captação de Oportunidades"}
           description={"Identificamos oportunidades de licitação alinhadas com o perfil do seu negócio."}
-          children={
-            <CustomIcon
-              type={"shop"}
-              alt={"shop"}
-              size={40}
-            />
-          }
+          icon={'shop'}
         />
 
         <Card
           title={"Participação na fase de lances"}
           description={"Gerenciamos o processo de apresentação de lances, buscando a melhor estratégia competitiva."}
-          children={
-            <CustomIcon
-              type={"shop"}
-              alt={"shop"}
-              size={40}
-            />
-          }
+          icon={'shop'}
         />
 
         <Card
           title={"Recursos e Impugnações"}
           description={"Gerenciamos recursos e impugnações para assegurar seus direitos durante o processo."}
-          children={
-            <CustomIcon
-              type={"shop"}
-              alt={"shop"}
-              size={40}
-            />
-          }
+          icon={'shop'}
         />
 
         <Card
           title={"Acompanhamento de Todo o Processo Licitatório"}
           description={"Estamos ao seu lado em cada etapa, desde a inscrição até a adjudicação."}
-          children={
-            <CustomIcon
-              type={"shop"}
-              alt={"shop"}
-              size={40}
-            />
-          }
+          icon={'shop'}
         />
 
         <Card
           title={"Acompanhamento Pós Licitação"}
           description={"Apoiamos você na fase pós-licitação, garantindo a execução tranquila do contrato."}
-          children={
-            <CustomIcon
-              type={"shop"}
-              alt={"shop"}
-              size={40}
-            />
-          }
+          icon={'shop'}
         />
       </Flex>
     </Flex>

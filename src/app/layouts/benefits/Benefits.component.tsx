@@ -43,13 +43,7 @@ const BenefitsSection = () => {
           description={
             "0 investimento incial, o governo oferece prazos para você atender à demanda."
           }
-          children={
-            <CustomIcon
-              type={"shop"}
-              alt={"shop"}
-              size={40}
-            />
-          }
+          icon={"shop"}
         />
 
         <Card
@@ -57,13 +51,7 @@ const BenefitsSection = () => {
           description={
             "Qualquer porte de empresa está apto a vender para o governo, até mesmo Pessoa Física."
           }
-          children={
-            <CustomIcon
-              type={"dollar"}
-              alt={"dollar"}
-              size={40}
-            />
-          }
+          icon={"dollar"}
         />
 
         <Card
@@ -71,13 +59,7 @@ const BenefitsSection = () => {
           description={
             "Venda para qualquer lugar do Brasil sem se preocupar com time de vendas."
           }
-          children={
-            <CustomIcon
-              type={"users"}
-              alt={"users"}
-              size={40}
-            />
-          }
+          icon={"users"}
         />
 
         <Card
@@ -85,13 +67,7 @@ const BenefitsSection = () => {
           description={
             "Você não precisa captar o cliente, o governo vem até você."
           }
-          children={
-            <CustomIcon
-              type={"scissors"}
-              alt={"scissors"}
-              size={40}
-            />
-          }
+          icon={"scissors"}
         />
       </Flex>
     </Flex>

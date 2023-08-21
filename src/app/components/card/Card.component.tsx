@@ -1,19 +1,20 @@
 import { Card, CardHeader, Text, CardBody, CardProps, CardFooter } from "@chakra-ui/react";
 import { Button } from "../button";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { CustomIcon } from "../custom-icon";
+import { IconSVG } from "../custom-icon/svgs";
 
 interface CustomCardpProps extends CardProps {
   title: string;
   description: string;
-  children: React.ReactNode;
+  icon: IconSVG;
 }
 
-
-const CustomCard = ({ title, description, children }: CustomCardpProps)=> {
+const CustomCard = ({ title, description, icon,  }: CustomCardpProps)=> {
   return(
     <Card>
       <CardHeader>
-        {children}
+        <CustomIcon type={icon} />
 
         <Text as='h3'>{title}</Text>
       </CardHeader>
