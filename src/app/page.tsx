@@ -1,6 +1,5 @@
 'use client'
 import { createContext } from 'react'
-
 import React from 'react';
 import { ChakraProvider, useMediaQuery } from '@chakra-ui/react'
 import { theme } from '@/styles/theme/theme';
@@ -15,8 +14,6 @@ import {
     Footer
   }
   from '@/app/layouts'
-
-const Context = createContext()
 
 export default function Home() {
   const [smallerThan540] = useMediaQuery("(max-width: 540px)");
