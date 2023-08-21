@@ -1,38 +1,43 @@
 'use client'
 import { createContext } from 'react'
 
-import Header from './components/header/Header.component'
-import { LandingSection, BenefitsSection, AboutSection, ServicesSection, MidiasSection, TalkToUs, TalkToUsSection } from './components/sections/index';
-import { Container } from './components/container';
-import { Footer } from './components/footer';
+import React from 'react';
+import { ChakraProvider, useMediaQuery } from '@chakra-ui/react'
+import { theme } from '@/styles/theme/theme';
+import {
+    AboutSection,
+    BenefitsSection,
+    Header,
+    HomeSection,
+    PartnersSection,
+    ServicesSection,
+    SocialSection,
+    Footer
+  }
+  from '@/app/layouts'
 
 const Context = createContext()
 
 export default function Home() {
+  const [smallerThan540] = useMediaQuery("(max-width: 540px)");
+
   return (
-    <main>
+    <ChakraProvider theme={theme}>
       <Header />
 
-      <Container>
-        <LandingSection />
-        <BenefitsSection />
-        <AboutSection />
-        <ServicesSection />
-      </Container>
+      <HomeSection />
 
-      <section style={{ width: '100%', backgroundColor: 'var(--primary-blue)', padding: '4rem 0' }}>
-        <Container>
-          <MidiasSection />
-        </Container>
-      </section>
+      { smallerThan540 ? <></> : <PartnersSection /> }
 
-      <Container>
-        <TalkToUsSection />
-      </Container>
+      <BenefitsSection />
 
-      <Container>
-        <Footer />
-      </Container>
-    </main>
+      <AboutSection />
+
+      <ServicesSection />
+
+      <SocialSection />
+
+      <Footer />
+    </ChakraProvider>
   )
 }

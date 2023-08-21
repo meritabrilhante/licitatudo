@@ -1,33 +1,36 @@
-import { IconType } from "react-icons";
-import { StyledButton } from "./Button";
+import { Button, ButtonProps, useMediaQuery } from "@chakra-ui/react";
+import { JSXElementConstructor, ReactElement } from "react";
 
-export interface ButtonProps {
-  buttonType: ButtonType;
-  text?: string;
-  icon?: IconType;
-  width?: string;
-  onClick?: () => void;
-}
-
-export type ButtonType = 'primary' | 'secondary' | 'tertiary' | 'quaternary';
-
-const IconWrapper = ({ icon: Icon }: { icon: IconType }) => <Icon size={'16px'} />;
-
-const Button = ({ buttonType, text, icon, width }: ButtonProps) => {
-  const handleClick = (externalLink: string) => {
-    window.open(externalLink, '_blank');
-  };
-
-  return (
-    <StyledButton
-      buttonType={buttonType}
-      width={width}
-      onClick={() => handleClick('https://api.whatsapp.com/send/?phone=61983494631&text&type=phone_number&app_absent=0')}
-    >
-      {icon && <IconWrapper icon={icon} />}
-      {text}
-    </StyledButton>
-  );
+interface CustomButtonProps extends ButtonProps {
+  text: string;
+  variant: string;
+  leftIcon?: ReactElement<any, string | JSXElementConstructor<any>>
+  rightIcon?: ReactElement<any, string | JSXElementConstructor<any>>
 };
 
-export default Button;
+const ButtonComponent = (
+  { text, variant, leftIcon, rightIcon }: CustomButtonProps) => {
+
+  const handleClick = () => {
+    window.open(
+      'https://api.whatsapp.com/send/?phone=61983494631&text&type=phone_number&app_absent=0',
+      '_blank'
+    );
+  };
+
+  const [smallerThan540] = useMediaQuery("(max-width: 540px)");
+
+  return(
+      <Button
+        variant={variant}
+        size={smallerThan540 ? 'md' : 'lg'}
+        maxWidth={smallerThan540 ? '100%' : '256px'}
+        leftIcon={leftIcon}
+        rightIcon={rightIcon}
+        onClick={handleClick}
+      >
+        {text}
+      </Button>
+    );
+  };
+export default ButtonComponent;
