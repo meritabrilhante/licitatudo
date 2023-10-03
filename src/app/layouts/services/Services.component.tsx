@@ -26,7 +26,7 @@ const ServicesSection = () => {
         gridTemplateColumns="repeat(3, 1fr)"
         margin={"0 auto"}
         py={16}
-        maxW={'1140px'}
+        maxW={'1280px'}
       >
         <Card
           title={"Adequação Documental"}

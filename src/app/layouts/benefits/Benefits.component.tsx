@@ -33,8 +33,9 @@ const BenefitsSection = () => {
       <Flex
         direction={smallerThan540 ? 'column' : 'row'}
         margin={"0 auto"}
-        maxW={'1140px'}
+        maxW={'1280px'}
         display={smallerThan540 ? 'flex': 'grid'}
+        gap={'32px'}
         gridTemplateColumns="repeat(4, 1fr)"
         py={38}
       >

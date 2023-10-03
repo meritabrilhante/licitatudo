@@ -11,14 +11,14 @@ const SocialComponent = () => {
       py={8}
     >
       <Flex
-        maxW={'1140px'}
+        maxW={'1280px'}
         px={8}
         py={8}
         direction={"column"}
         margin={"0 auto"}
         borderRadius={"32px"}
       >
-        <Box display={"flex"} flexDirection={"column"} gap={"16px"}>
+        <Box display={"flex"} flexDirection={"column"} gap={"24px"}>
           <Text as='h2'>Acompanhe nossos conteúdos</Text>
           <Text
             as='p'

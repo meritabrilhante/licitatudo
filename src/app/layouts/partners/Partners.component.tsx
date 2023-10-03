@@ -3,7 +3,7 @@ import Image from 'next/image';
 import saboretti from 'public/assets/images/partners/saboretti.png'
 import italinea from 'public/assets/images/partners/italinea.png'
 import todeschini from 'public/assets/images/partners/todeschini.png'
-import shopSolar from 'public/assets/images/partners/shop-solar.png'
+import laPriori from 'public/assets/images/partners/la-priori.png'
 
 const PartnersSection = () => {
   const [smallerThan540] = useMediaQuery("(max-width: 540px)");
@@ -18,7 +18,7 @@ const PartnersSection = () => {
     >
         <Flex
            margin={"0 auto"}
-           maxW={'1140px'}
+           maxW={'1280px'}
            justify={'center'}
            align={'center'}
            direction={smallerThan540 ? 'column' : 'row'}
@@ -40,26 +40,26 @@ const PartnersSection = () => {
           >
             <Image
               src={saboretti}
-              alt="Logo"
-              width={120}
+              alt="Saboretti"
+              width={140}
             />
 
             <Image
               src={italinea}
-              alt="Logo"
-              width={120}
+              alt="Italinea"
+              width={140}
             />
 
             <Image
               src={todeschini}
-              alt="Logo"
-              width={120}
+              alt="Todeschini"
+              width={140}
             />
 
             <Image
-              src={shopSolar}
-              alt="Logo"
-              width={120}
+              src={laPriori}
+              alt="La Priori"
+              width={140}
             />
         </Flex>
       </Flex>

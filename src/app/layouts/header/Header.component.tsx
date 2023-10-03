@@ -11,18 +11,22 @@ const Header = () => {
     <Box
         as="header"
         borderBottom="0.5px solid #D0D6E2"
+        position={"fixed"}
+        zIndex={"9999"}
+        width={"100%"}
+        backgroundColor={"white.200"}
         py={8}
         px={4}
       >
         <Flex
           justify={"space-between"}
-          maxW={"1140px"}
+          maxW={"1280px"}
           margin={"0 auto"}
         >
           <Image
             src={logo}
-            alt="Logo"
-            width={smallerThan540 ? 140 : 180}
+            alt="Licitatudo"
+            width={smallerThan540 ? 140 : 200}
           />
 
           <Button

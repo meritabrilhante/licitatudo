@@ -16,7 +16,7 @@ const AboutSection = () => {
         px={4}
         align={"center"}
         margin={"0 auto"}
-        maxW={'1140px'}
+        maxW={'1280px'}
         direction={{ base: "column", md: "row" }}
       >
         <Box
@@ -51,7 +51,7 @@ const AboutSection = () => {
         >
           <Image
             src={women}
-            alt="Logo"
+            alt="Mulher sorrindo segurando um tablet"
             width={350}
           />
         </Box>

@@ -9,11 +9,11 @@ const Footer = () => {
   return(
     <Box
       width={"100%"}
-      paddingTop={"40px"}
+      paddingTop={"56px"}
       px={4}
     >
       <Flex
-        maxW={"1140px"}
+        maxW={"1280px"}
         margin={"0 auto"}
         direction={"column"}
         gap={"40px"}
@@ -21,7 +21,7 @@ const Footer = () => {
         <Box>
           <Image
             src={logo}
-            alt="Logo"
+            alt="Licitatudo"
             width={124}
           />
         </Box>
@@ -58,11 +58,14 @@ const Footer = () => {
               SCRS 516 Bloco B Número 69 SCRS 516, B. B, Número 66
               Asa Sul, Brasília - DF, 70381-525</Text>
             <Text>licitatudo22@gmail.com</Text>
+            <Text>61 98349-4631</Text>
           </Box>
         </Box>
 
         <Box
+          borderTop={'0.5px solid #D0D6E2'}
           display={"flex"}
+          padding={"16px 0"}
           flexDirection={smallerThan540 ? "column" : "row"}
           justifyContent={"space-between"}
           gap={"16px"}

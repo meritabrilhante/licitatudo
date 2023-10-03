@@ -46,8 +46,8 @@ export const theme = extendTheme({
       },
       h1: {
         color: 'blue.300',
-        fontWeight: 700,
-        fontSize: '48px',
+        fontWeight: 800,
+        fontSize: '64px',
         lineHeight: '120%'
       },
       h2: {
@@ -64,7 +64,7 @@ export const theme = extendTheme({
       },
       h4: {
         color: 'blue.300',
-        fontWeight: 500,
+        fontWeight: 600,
         fontSize: '18px'
       },
       h5: {
@@ -75,7 +75,8 @@ export const theme = extendTheme({
       },
       p: {
         fontWeight: 400,
-        lineHeight: "180%"
+        fontSize: '20px',
+        lineHeight: "160%"
       }
     },
   },
