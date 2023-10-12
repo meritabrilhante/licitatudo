@@ -5,6 +5,20 @@ import { FaLinkedin, FaInstagram } from "react-icons/fa";
 const SocialComponent = () => {
   const [smallerThan540] = useMediaQuery("(max-width: 540px)");
 
+  const handleInstagramOpen = () => {
+    window.open(
+      'https://www.instagram.com/licitatudobr/',
+      '_blank'
+    );
+  };
+
+  const handleLinkedinpOpen = () => {
+    window.open(
+      'https://www.linkedin.com/company/licitatudo/',
+      '_blank'
+    );
+  };
+
   return(
     <Box
       backgroundColor={"white.100"}
@@ -36,12 +50,14 @@ const SocialComponent = () => {
               text={"Linkedin"}
               variant={"solidBlue"}
               leftIcon={<FaLinkedin />}
+              onClick={handleLinkedinpOpen}
             />
 
             <Button
               text={"Instagram"}
               variant={"solidBlue"}
               leftIcon={<FaInstagram />}
+              onClick={handleInstagramOpen}
             />
           </Box>
         </Box>

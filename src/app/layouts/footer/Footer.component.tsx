@@ -1,5 +1,4 @@
 import { Flex, Box, Text, useMediaQuery } from "@chakra-ui/react";
-import logo from '/public/assets/images/logo.svg'
 import Image from 'next/image';
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
@@ -20,9 +19,10 @@ const Footer = () => {
       >
         <Box>
           <Image
-            src={logo}
+            src={'https://raw.githubusercontent.com/meritabrilhante/licitatudo-imagens/09fddaa6f8756f0e249fe6f1aac6415a8a4288ad/images/logo.svg'}
             alt="Licitatudo"
             width={124}
+            height={10}
           />
         </Box>
 
@@ -39,13 +39,6 @@ const Footer = () => {
           >
             <Text as='h4'>Institucional</Text>
             <Text>Política de Privacidade</Text>
-            <Text
-              as='a'
-              target={"_blank"}
-              href={"https://www.linkedin.com/company/licitatudo/jobs/"}
-            >
-                Trabalhe Conosco
-            </Text>
           </Box>
 
           <Box
@@ -79,7 +72,7 @@ const Footer = () => {
             display={"flex"}
             gap={"8px"}
             as='a'
-            href={"https://www.linkedin.com/in/rtcstr/?originalSubdomain=br"}
+            href={"https://www.linkedin.com/in/meritabrilhante/"}
             target={"_blank"}
           >
             Desenvolvido por <b>Rita Brilhante Tecnologia</b>

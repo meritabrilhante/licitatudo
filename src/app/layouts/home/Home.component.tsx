@@ -2,13 +2,19 @@ import { Button } from "@/app/components/button";
 import { PhoneIcon } from "@chakra-ui/icons";
 import { Flex, Box, Text } from "@chakra-ui/react";
 import Image from 'next/image';
-import man from 'public/assets/images/siting-man.png'
 
 const HomeSection = () => {
+  const handleWhatsppOpen = () => {
+    window.open(
+      'https://api.whatsapp.com/send/?phone=61983494631&text&type=phone_number&app_absent=0',
+      '_blank'
+    );
+  };
+
   return(
     <Flex
       px={4}
-      py={32}
+      py={40}
       align={"center"}
       margin={"0 auto"}
       maxW={'1280px'}
@@ -35,14 +41,16 @@ const HomeSection = () => {
           text={"Solicitar Orçamento"}
           variant={"solidBlue"}
           leftIcon={<PhoneIcon />}
+          onClick={handleWhatsppOpen}
         />
       </Box>
 
-      <Box>
+      <Box margin={'0 auto'}>
         <Image
-          src={man}
+          src={'https://raw.githubusercontent.com/meritabrilhante/licitatudo/c0adc55e2a8b301950a508b25e594231d54724d1/public/assets/images/image.svg'}
+          height={200}
           alt="Homem sentado com um laptop apontando para o lado esquerdo"
-          width={400}
+          width={500}
         />
       </Box>
     </Flex>

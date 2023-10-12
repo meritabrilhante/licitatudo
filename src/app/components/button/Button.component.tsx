@@ -9,14 +9,7 @@ interface CustomButtonProps extends ButtonProps {
 };
 
 const ButtonComponent = (
-  { text, variant, leftIcon, rightIcon }: CustomButtonProps) => {
-
-  const handleClick = () => {
-    window.open(
-      'https://api.whatsapp.com/send/?phone=61983494631&text&type=phone_number&app_absent=0',
-      '_blank'
-    );
-  };
+  { text, variant, leftIcon, rightIcon, onClick }: CustomButtonProps) => {
 
   const [smallerThan540] = useMediaQuery("(max-width: 540px)");
 
@@ -27,7 +20,7 @@ const ButtonComponent = (
         maxWidth={smallerThan540 ? '100%' : '256px'}
         leftIcon={leftIcon}
         rightIcon={rightIcon}
-        onClick={handleClick}
+        onClick={onClick}
       >
         {text}
       </Button>

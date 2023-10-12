@@ -1,11 +1,17 @@
 import { Button } from "@/app/components/button";
 import { ChatIcon } from "@chakra-ui/icons";
-import { Box, Flex, List, ListItem, Text, useMediaQuery } from "@chakra-ui/react";
+import { Box, Flex, Text, useMediaQuery } from "@chakra-ui/react";
 import Image from 'next/image';
-import women from 'public/assets/images/women.png'
 
 const AboutSection = () => {
   const [smallerThan540] = useMediaQuery("(max-width: 540px)");
+
+  const handleWhatsppOpen = () => {
+    window.open(
+      'https://api.whatsapp.com/send/?phone=61983494631&text&type=phone_number&app_absent=0',
+      '_blank'
+    );
+  };
 
   return(
     <Box
@@ -42,6 +48,7 @@ const AboutSection = () => {
             text={"Fale Conosco"}
             variant={"solidGreen"}
             leftIcon={<ChatIcon />}
+            onClick={handleWhatsppOpen}
           />
         </Box>
 
@@ -50,9 +57,10 @@ const AboutSection = () => {
           p={smallerThan540 ? 8 : 0}
         >
           <Image
-            src={women}
+            src={'https://raw.githubusercontent.com/meritabrilhante/licitatudo-imagens/main/images/women.png'}
+            height={100}
             alt="Mulher sorrindo segurando um tablet"
-            width={350}
+            width={400}
           />
         </Box>
       </Flex>

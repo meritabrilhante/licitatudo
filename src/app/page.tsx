@@ -14,12 +14,17 @@ import {
     Footer
   }
   from '@/app/layouts'
+import Head from 'next/head';
 
 export default function Home() {
   const [smallerThan540] = useMediaQuery("(max-width: 540px)");
 
   return (
     <ChakraProvider theme={theme}>
+      <Head>
+        <link rel="icon" href="https://raw.githubusercontent.com/meritabrilhante/licitatudo-imagens/main/images/favicon.ico" />
+      </Head>
+
       <Header />
 
       <HomeSection />

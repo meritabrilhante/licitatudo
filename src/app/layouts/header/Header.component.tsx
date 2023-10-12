@@ -1,11 +1,17 @@
 import { Button } from "@/app/components/button";
 import { Box, Flex, useMediaQuery } from "@chakra-ui/react";
-import logo from '/public/assets/images/logo.svg'
 import { FaWhatsapp } from "react-icons/fa";
 import Image from 'next/image';
 
 const Header = () => {
   const [smallerThan540] = useMediaQuery("(max-width: 540px)");
+
+  const handleWhatsppOpen = () => {
+    window.open(
+      'https://api.whatsapp.com/send/?phone=61983494631&text&type=phone_number&app_absent=0',
+      '_blank'
+    );
+  };
 
   return(
     <Box
@@ -24,7 +30,8 @@ const Header = () => {
           margin={"0 auto"}
         >
           <Image
-            src={logo}
+            src={'https://raw.githubusercontent.com/meritabrilhante/licitatudo-imagens/09fddaa6f8756f0e249fe6f1aac6415a8a4288ad/images/logo.svg'}
+            height={10}
             alt="Licitatudo"
             width={smallerThan540 ? 140 : 200}
           />
@@ -33,6 +40,7 @@ const Header = () => {
             text={"Whatsapp"}
             variant={"solidGreen"}
             leftIcon={<FaWhatsapp size={24}/>}
+            onClick={handleWhatsppOpen}
           />
         </Flex>
       </Box>

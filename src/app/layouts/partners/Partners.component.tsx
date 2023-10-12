@@ -39,27 +39,31 @@ const PartnersSection = () => {
             direction={smallerThan540 ? 'column' : 'row'}
           >
             <Image
-              src={saboretti}
+              src={'https://raw.githubusercontent.com/meritabrilhante/licitatudo-imagens/main/images/partners/saboretti.png'}
               alt="Saboretti"
               width={140}
+              height={20}
             />
 
             <Image
-              src={italinea}
+              src={'https://raw.githubusercontent.com/meritabrilhante/licitatudo-imagens/main/images/partners/italinea.png'}
               alt="Italinea"
               width={140}
+              height={20}
             />
 
             <Image
-              src={todeschini}
+              src={'https://raw.githubusercontent.com/meritabrilhante/licitatudo-imagens/main/images/partners/todeschini.png'}
               alt="Todeschini"
               width={140}
+              height={20}
             />
 
             <Image
-              src={laPriori}
+              src={'https://raw.githubusercontent.com/meritabrilhante/licitatudo-imagens/main/images/partners/la-priori.png'}
               alt="La Priori"
               width={140}
+              height={20}
             />
         </Flex>
       </Flex>

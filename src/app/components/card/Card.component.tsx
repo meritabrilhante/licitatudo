@@ -11,6 +11,13 @@ interface CustomCardpProps extends CardProps {
 }
 
 const CustomCard = ({ title, description, icon,  }: CustomCardpProps)=> {
+  const handleWhatsppOpen = () => {
+    window.open(
+      'https://api.whatsapp.com/send/?phone=61983494631&text&type=phone_number&app_absent=0',
+      '_blank'
+    );
+  };
+
   return(
     <Card>
       <CardHeader>
@@ -28,6 +35,7 @@ const CustomCard = ({ title, description, icon,  }: CustomCardpProps)=> {
           text={"Saiba Mais"}
           variant={"outlined"}
           leftIcon={<ExternalLinkIcon />}
+          onClick={handleWhatsppOpen}
         />
       </CardFooter>
     </Card>
