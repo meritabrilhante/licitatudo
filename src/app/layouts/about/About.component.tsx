@@ -57,7 +57,7 @@ const AboutSection = () => {
           p={smallerThan540 ? 8 : 0}
         >
           <Image
-            src={'https://raw.githubusercontent.com/meritabrilhante/licitatudo-imagens/main/images/women.png'}
+            src={'https://raw.githubusercontent.com/meritabrilhante/licitatudo/3cc3d14f4d1b14b62b75bc92246e4130d0c003bb/public/assets/images/woman.svg'}
             height={100}
             alt="Mulher sorrindo segurando um tablet"
             width={400}

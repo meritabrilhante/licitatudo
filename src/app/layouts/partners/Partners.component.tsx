@@ -39,28 +39,28 @@ const PartnersSection = () => {
             direction={smallerThan540 ? 'column' : 'row'}
           >
             <Image
-              src={'https://raw.githubusercontent.com/meritabrilhante/licitatudo-imagens/main/images/partners/saboretti.png'}
+              src={'https://raw.githubusercontent.com/meritabrilhante/licitatudo/3cc3d14f4d1b14b62b75bc92246e4130d0c003bb/public/assets/images/partners/saboretti.svg'}
               alt="Saboretti"
               width={140}
               height={20}
             />
 
             <Image
-              src={'https://raw.githubusercontent.com/meritabrilhante/licitatudo-imagens/main/images/partners/italinea.png'}
+              src={'https://raw.githubusercontent.com/meritabrilhante/licitatudo/3cc3d14f4d1b14b62b75bc92246e4130d0c003bb/public/assets/images/partners/italinea.svg'}
               alt="Italinea"
               width={140}
               height={20}
             />
 
             <Image
-              src={'https://raw.githubusercontent.com/meritabrilhante/licitatudo-imagens/main/images/partners/todeschini.png'}
+              src={'https://raw.githubusercontent.com/meritabrilhante/licitatudo/3cc3d14f4d1b14b62b75bc92246e4130d0c003bb/public/assets/images/partners/todeschini.svg'}
               alt="Todeschini"
               width={140}
               height={20}
             />
 
             <Image
-              src={'https://raw.githubusercontent.com/meritabrilhante/licitatudo-imagens/main/images/partners/la-priori.png'}
+              src={'https://raw.githubusercontent.com/meritabrilhante/licitatudo/3cc3d14f4d1b14b62b75bc92246e4130d0c003bb/public/assets/images/partners/la-priori.svg'}
               alt="La Priori"
               width={140}
               height={20}
